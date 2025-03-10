@@ -31,7 +31,7 @@ pip install -r requirements.txt
 
 
 Dataset
-The model was validated on 31,910 ultrasound images from 7,882 patients across multicenter cohorts. Due to patient privacy regulations, please contact the corresponding author for dataset access requests.
+The model was trained on 31,910 ultrasound images from 7,882 patients across multicenter cohorts. Due to patient privacy regulations, please contact the corresponding author for dataset access requests.
 
 Preprocessing steps:
 
@@ -40,3 +40,19 @@ Adaptive histogram equalization
 Anatomical ROI detection
 
 Dual-resolution normalization (512×512 and 256×256)
+
+
+Performance Highlights
+Metric	Binary Classification	Ternary Classification
+Accuracy	99.01%	86.69%
+Sensitivity	0.995	0.912
+Specificity	0.931	0.894
+AUC	0.991	0.889
+Inference Speed	11.71ms/image	13.02ms/image
+Comparative Performance (vs Human Experts):
+
+27.2% higher macro AUC in ternary classification
+
+19.1% improvement in sensitivity
+
+12.9% higher specificity
